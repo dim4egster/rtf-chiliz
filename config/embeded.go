@@ -25,7 +25,7 @@ var spicyRawGenesisConfig []byte
 
 var SpicyGenesisConfig = mustParseGenesisConfigFromJson(spicyRawGenesisConfig)
 
-//go:embed embedded/chiliz.json
+//go:embed embedded/genesisrtf.json
 var chilizRawGenesisConfig []byte
 
 var ChilizMainnetGenesisConfig = mustParseGenesisConfigFromJson(chilizRawGenesisConfig)

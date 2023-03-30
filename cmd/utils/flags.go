@@ -939,8 +939,9 @@ func setBootstrapNodes(ctx *cli.Context, cfg *p2p.Config) {
 		urls = params.GoerliBootnodes
 	case ctx.GlobalBool(YoloV3Flag.Name):
 		urls = params.YoloV3Bootnodes
+	/* Temporary disable embeded bootnodes for chiliz mainnet
 	case ctx.GlobalBool(ChilizMainnetFlag.Name):
-		urls = params.ChilizMainnetBootnodes
+		urls = params.ChilizMainnetBootnodes*/
 	case ctx.GlobalBool(ChilizTestnetFlag.Name):
 		urls = params.ChilizScovilleBootnodes
 	case ctx.GlobalBool(ChilizSpicyFlag.Name):
@@ -1781,7 +1782,7 @@ func SetEthConfig(ctx *cli.Context, stack *node.Node, cfg *ethconfig.Config) {
 		cfg.Genesis = core.DefaultYoloV3GenesisBlock()
 	case ctx.GlobalBool(ChilizMainnetFlag.Name):
 		if !ctx.GlobalIsSet(NetworkIdFlag.Name) {
-			cfg.NetworkId = 88888
+			cfg.NetworkId = 32199
 		}
 	case ctx.GlobalBool(ChilizTestnetFlag.Name):
 		if !ctx.GlobalIsSet(NetworkIdFlag.Name) {
