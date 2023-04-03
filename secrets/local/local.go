@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/0xPolygon/polygon-edge/helper/common"
+	"github.com/ethereum/go-ethereum/helper/common"
 	"github.com/ethereum/go-ethereum/secrets"
 	"github.com/hashicorp/go-hclog"
 )

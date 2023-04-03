@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/0xPolygon/polygon-edge/helper/common"
+	"github.com/ethereum/go-ethereum/helper/common"
 )
 
 // SecretsManagerConfig is the configuration that gets
